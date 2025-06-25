@@ -6,11 +6,11 @@ terraform {
     }
   }
   backend "s3" {
-	  bucket         = "backend-bucket-csm"
-	  key            = "terraform/state-test/terraform.tfstate"
-	  region         = "ap-northeast-2"
+    bucket         = "backend-bucket-csm"
+    key            = "terraform/state-test/terraform.tfstate"
+    region         = "ap-northeast-2"
     dynamodb_table = "DynamoDB-Lock"
-	}
+  }
 }
 
 provider "aws" {
