@@ -29,7 +29,6 @@ jobs:
         
     - name: Terraform Format Check
       run: terraform fmt
-
     - name: Terraform Init
       run: terraform init
 
